@@ -33,13 +33,15 @@ img {
 a {
   text-decoration: none;
 }
+.headr {
+  border-bottom: 1px solid var(--cornflower);
+}
 
 .headr .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border-bottom: 1px solid var(--cornflower);
 }
 
 .ul-headr {
@@ -47,7 +49,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 24px 76px;
+  padding: 24px;
   margin: 0;
 }
 
@@ -81,6 +83,7 @@ a {
   color: var(--iris);
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-headr:hover,
@@ -92,7 +95,7 @@ a {
   color: var(--navy-blue);
 }
 
-.address ul {
+.ul-address {
   font-style: normal;
   display: flex;
   flex-direction: row;
