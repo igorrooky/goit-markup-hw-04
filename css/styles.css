@@ -36,6 +36,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .ul-headr {
@@ -218,7 +219,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 120px 0 0;
+  padding: 80px 0 0;
   margin: 0;
   gap: 24px;
 }
@@ -241,9 +242,13 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 120px 0;
+  padding: 0 0 120px 0;
   gap: 24px;
   max-width: 1128px;
+}
+
+.portfolio-section li {
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .portfolio-title {
@@ -253,6 +258,7 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: var(--navy-blue);
+  padding: 0 0 72px;
   margin: 0;
 }
 
