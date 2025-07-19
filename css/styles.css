@@ -27,6 +27,9 @@ body {
   align-items: center;
 }
 
+img {
+  display: block;
+}
 a {
   text-decoration: none;
 }
