@@ -398,6 +398,7 @@ ol {
 
 .span-footr {
   color: var(--cloud);
+  display: inline-block;
 }
 
 .p-footr {
