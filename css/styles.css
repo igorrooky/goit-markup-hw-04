@@ -366,7 +366,6 @@ ol {
 }
 
 .footr {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--navy-blue);
