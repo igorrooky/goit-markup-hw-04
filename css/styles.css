@@ -315,8 +315,8 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-bottom: 8px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .p-portfolio {
@@ -378,6 +378,10 @@ ol {
   align-items: flex-start;
 }
 
+.footr a {
+  display: inline-block;
+}
+
 .logo-footr {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -387,7 +391,6 @@ ol {
   text-decoration: none;
   color: var(--iris);
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
 }
 
