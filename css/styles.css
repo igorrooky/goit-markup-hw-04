@@ -24,9 +24,6 @@ body {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 img {
@@ -35,6 +32,24 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -52,35 +67,28 @@ a {
 }
 
 .headr {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 1px solid var(--cornflower);
 }
 
 .headr .container {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  align-items: center;
 }
 
 .ul-headr {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
-  margin: 0;
 }
 
 .navi {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -119,21 +127,19 @@ a {
 .ul-address {
   font-style: normal;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 40px;
-  padding: 24px;
-  margin: 0;
 }
 
 .address-link {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--slate);
+  padding: 24px 0;
 }
 
 .address-link:hover,
@@ -142,26 +148,11 @@ a {
 }
 
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: var(--navy-blue);
   padding: 188px 0;
 }
 
-.hero-section .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .team-section {
-  display: flex;
-  flex-basis: auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 120px 0;
   background: var(--cloud);
 }
@@ -172,30 +163,19 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
-  padding: auto 0 20px;
+  margin: 0 auto 48px;
   max-width: 496px;
-  margin: 0;
 }
 
 .adv-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 120px 0 120px;
 }
 
 .adv-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
 }
 
 .adv-list-li {
-  display: flex;
-  flex-direction: column;
   margin-right: 24px;
   flex-basis: calc((100% - 72px) / 4);
 }
@@ -240,7 +220,7 @@ a {
   margin-bottom: 8px;
 }
 
-.p-team {
+.team-p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -250,52 +230,32 @@ a {
 
 .ul-team {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
   gap: 24px;
 }
 
-.ul-team li {
+.ul-team-list {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 32px 0;
-  margin: 0;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 120px 0 120px 0;
 }
 
 .portfolio-section-ul {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0 0 120px 0;
   gap: 24px;
-  max-width: 1128px;
   row-gap: 48px;
 }
 
 .portfolio-section-li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .portfolio-title {
@@ -314,7 +274,6 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin: 0;
   margin-bottom: 8px;
 }
 
@@ -323,23 +282,12 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  margin: 0;
 }
 
 .portfolio-list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 32px 16px;
-  width: 100%;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--cornflower);
   border-top: none;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  margin: 0 0;
 }
 
 .buttons {
@@ -356,7 +304,8 @@ ol {
   min-width: 169px;
   height: 56px;
   border: none;
-  margin: 48px;
+  margin: 0 auto;
+  display: block;
 }
 
 .buttons:hover,
