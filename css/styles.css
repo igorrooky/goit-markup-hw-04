@@ -290,6 +290,7 @@ a {
   padding: 0 0 120px 0;
   gap: 24px;
   max-width: 1128px;
+  row-gap: 48px;
 }
 
 .portfolio-section-li {
@@ -315,6 +316,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin-bottom: 8px;
+  margin: 0;
 }
 
 .p-portfolio {
@@ -322,13 +324,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin: 0;
 }
 
 .portfolio-list-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 24px;
+  padding: 32px 16px;
   width: 100%;
   border: 1px solid #e7e9fc;
   border-top: none;
