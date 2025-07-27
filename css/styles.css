@@ -101,10 +101,7 @@ p {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--ocean);
-  border-bottom: var(--ocean) 4px solid;
-  border-radius: 0 0 4px 4px;
-  padding-bottom: 20px;
-  transition: color 250ms ease-in-out, border-bottom 250ms ease-in-out;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .logo-hdr {
@@ -122,6 +119,7 @@ p {
 .logo-hdr:hover,
 .logo-hdr:focus {
   color: var(--ocean);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .span-hdr {
@@ -149,6 +147,7 @@ p {
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .hero-section {
@@ -212,6 +211,7 @@ p {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: var(--cloud);
   opacity: 1;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .adv-list {
@@ -268,6 +268,11 @@ p {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 32px;
+}
+
+.team-icon-box li:hover {
+  background-color: var(--ocean);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .team-title {
@@ -329,7 +334,7 @@ p {
   cursor: pointer;
 }
 
-.portfolio-list-overflow {
+.portfolio-list-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -346,10 +351,12 @@ p {
 .portfolio-list-li:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.portfolio-list-li:hover .portfolio-list-overflow {
+.portfolio-list-li:hover .portfolio-list-overlay {
   transform: translateY(0);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .portfolio-title {
@@ -405,6 +412,7 @@ p {
 .buttons:hover,
 .buttons:focus {
   background: var(--ocean);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .ftr {
@@ -437,6 +445,7 @@ p {
 .logo-ftr:hover,
 .logo-ftr:focus {
   color: var(--ocean);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .span-ftr {
@@ -475,4 +484,9 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.ftr-icon-box li:hover {
+  background-color: var(--green);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
