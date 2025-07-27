@@ -187,6 +187,30 @@ p {
   max-width: 496px;
 }
 
+.adv-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.adv-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--cloud);
+  border-radius: 5%;
+  border: 1px solid var(--light-slate);
+  opacity: 0.8;
+}
+
+.adv-icon-box:hover,
+.adv-icon-box:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--light-slate);
+  opacity: 1;
+}
+
 .adv-list {
   display: flex;
 }
@@ -206,6 +230,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 
