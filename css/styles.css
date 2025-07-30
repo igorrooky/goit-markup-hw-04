@@ -175,7 +175,7 @@ p {
 
 .adv-section {
   padding: 120px 0 120px;
-  max-width: 1440px;
+
   margin: 0 auto;
 }
 
@@ -253,10 +253,6 @@ p {
   left: 30%;
 }
 
-.team-icon-box {
-  padding: 32px 0;
-}
-
 .team-icon-box ul {
   display: flex;
   justify-content: center;
@@ -330,7 +326,7 @@ p {
 }
 
 .team-name {
-  padding: 32px 0 0 8px;
+  padding: 32px 0;
 }
 
 .portfolio-ul {
@@ -475,9 +471,13 @@ p {
   max-width: 264px;
 }
 
-.ftr-icon {
-  width: 20px;
-  height: 20px;
+.p-ftr-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
 }
 
 .ftr-icon-box {
@@ -486,7 +486,6 @@ p {
 
 .ftr-icon-box ul {
   display: flex;
-  margin-top: 16px;
   gap: 16px;
 }
 
@@ -496,11 +495,17 @@ p {
   border-radius: 50%;
   background-color: var(--iris);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
-.ftr-icon-box li:hover {
-  background-color: var(--green);
+.ftr-icon {
+  fill: var(--iris);
+}
+.ftr-icon:hover,
+.ftr-icon:focus {
+  fill: var(--green);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
