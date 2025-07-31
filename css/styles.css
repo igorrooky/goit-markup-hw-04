@@ -109,6 +109,7 @@ p {
 }
 
 .menu-link.current::before {
+  color: var(--ocean);
   content: "";
   position: absolute;
   left: 0;
