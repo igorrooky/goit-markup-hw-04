@@ -266,7 +266,7 @@ p {
   left: 30%;
 }
 
-.team-icon-box ul {
+.team-icon-box {
   display: flex;
   justify-content: center;
   gap: 24px;
