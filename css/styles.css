@@ -183,7 +183,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .team-section {
